@@ -1,6 +1,6 @@
 import { Router } from 'express'; 
 import { getAllCountries, getCountryByName, getRegions, getLanguages, getStatistics } from '../controllers/countryController'; // Import controller functions for handling requests
-
+   
   
 const router = Router();
 
@@ -8,7 +8,7 @@ const router = Router();
 router.get('/', getAllCountries);
 
 // Route to get detailed information about a country by its name
-router.get('/name', getCountryByName);
+router.get('/name',  getCountryByName);
 
 // Route to get aggregated data about regions
 router.get('/regions', getRegions);

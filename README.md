@@ -6,18 +6,21 @@ This project is a REST API built with TypeScript and Express, integrating data f
 
 ## Setup Instructions
 
-1. Clone the repository
+1. Clone the repository  `git clone https://github.com/danieldaudu65country-api.git`
+
 2. Install dependencies: `npm install`
-3. Create a `.env` file and add your environment variables
+
+3. Create a `.env` file add your environment variables (if needed). For now, this project does not require any specific environment variables.
+
 4. Start the server: `npm run start`
 
 ## Endpoints
 
-- `GET /api/countries`: Retrieve a list of countries
+- `GET /api/countries`:     Retrieve a list of countries
 - `GET /api/countries/:id`: Retrieve detailed information for a specific country
-- `GET /api/regions`: Retrieve a list of regions and the countries within each region
-- `GET /api/languages`: Retrieve a list of languages and the countries where they are spoken
-- `GET /api/statistics`: Provide aggregated statistics
+- `GET /api/regions`:       Retrieve a list of regions and the countries within each region
+- `GET /api/languages`:     Retrieve a list of languages and the countries where they are spoken
+- `GET /api/statistics`:    Provide aggregated statistics
 
 ## Highlights
 
@@ -28,5 +31,11 @@ This project is a REST API built with TypeScript and Express, integrating data f
 ## Potential Improvements
 
 - Enhance caching strategies
-- Add more detailed error handling
-- Implement more advanced filtering and sorting options
+- Added more detailed error handling
+- Implemented more advanced filtering and sorting options
+
+
+## Contributions
+
+- Feel free to submit issues or pull requests. Contributions are welcome!
+

@@ -186,7 +186,7 @@ export const getLanguages = async (req: Request, res: Response) => {
     // Aggregate language data across all countries
     const languages: { [key: string]: { countries: string[], totalSpeakers: number } } = {};
 
-    countries.forEach((country) => { 
+    countries.forEach((country: Country) => { 
       if (country.languages) { 
         Object.entries(country.languages).forEach(([langCode, langName]) => {
           if (!languages[langName]) {
@@ -202,6 +202,9 @@ export const getLanguages = async (req: Request, res: Response) => {
       }
     });
 
+    // Get total number of languages
+    const totalLanguages = Object.keys(languages).length;
+
     // Format total speakers for each language
     const languageData = Object.entries(languages).map(([lang, data]) => ({
       language: lang,
@@ -209,8 +212,11 @@ export const getLanguages = async (req: Request, res: Response) => {
       totalSpeakers: formatNumberWithCommas(data.totalSpeakers)
     }));
 
-    // Respond with language statistics
-    res.status(200).json(languageData);
+    // Respond with language statistics and total number of languages
+    res.status(200).json({
+      totalLanguages: `There are ${totalLanguages} languages in total.`,
+      languages: languageData
+    });
   } catch (error) {
     // Handle errors by logging and sending a 500 response
     console.error('Error fetching language data:', error);
