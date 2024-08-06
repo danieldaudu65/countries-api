@@ -5,7 +5,7 @@ import countriesRoute from './routes/countriesRoute';
 const app = express(); 
 const PORT = process.env.PORT || 4000; // Define the port on which the server will listen to [4000] if not specifies
 
-
+ 
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json());
 
