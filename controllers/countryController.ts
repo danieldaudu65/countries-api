@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import { fetchAllCountries } from '../services/countryService';
-import axios from 'axios';
-
+import axios from '../node_modules/axios/index';
 // Define the structure of country data
 interface Country {
   name: {
