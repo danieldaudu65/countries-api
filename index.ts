@@ -1,20 +1,15 @@
-import express from 'express'; 
+import express from 'express';
 import bodyParser from 'body-parser';
-import countriesRoute from './routes/countriesRoute';
+import countriesRoute from './routes/countriesRoute'; // Make sure this path is correct
 
-const app = express(); 
-const PORT = process.env.PORT || 4000; // Define the port on which the server will listen to [4000] if not specifies
+const app = express();
+const PORT = process.env.PORT || 4500;
 
- 
-// Middleware to parse JSON request bodies
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 
-   
-// Mount the countries router at the '/api/countries' path
+// Mount the router
 app.use('/api/countries', countriesRoute);
- 
 
-// Start the server and listen on the defined port
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
