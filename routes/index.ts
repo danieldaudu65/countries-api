@@ -6,5 +6,5 @@ const router = Router();
 // Use the imported countryRoutes for any routes starting with '/countries'
 router.use('/countries', countryRoutes);
 
-export default router;
+export default router;   
      
