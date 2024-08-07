@@ -34,11 +34,18 @@ The implementation involves:
 
 ## Endpoints
 
-- **`GET /api/countries`**: Retrieve a list of all countries.
-- **`GET /api/countries/name`**: Retrieve information about countries by their names.
-- **`GET /api/regions`**: Retrieve a list of regions and the countries within each region.
-- **`GET /api/languages`**: Retrieve a list of languages spoken across countries, including the total number of speakers and the countries where each language is spoken.
-- **`GET /api/statistics`**: Provide aggregated statistics about countries and languages.
+Below are the endpoints for the given tasks:
+
+- **`GET   https://countries-api-2.onrender.com/api/countries  **`: Retrieve a list of all countries.
+
+- **`GET   https://countries-api-2.onrender.com/api/countries/name`**: Retrieve information about countries by their names. 
+    e.g `https://countries-api-2.onrender.com/api/countries/name?name=germany`
+
+- **`GET   https://countries-api-2.onrender.com/api/countries/regions`**: Retrieve a list of regions and the countries within each region.
+
+- **`GET   https://countries-api-2.onrender.com/api/countries/languages`**: Retrieve a list of languages spoken across countries, including the total number of speakers and the countries where each language is spoken.
+
+- **`GET   https://countries-api-2.onrender.com/api/countries/statistics`**: Provide aggregated statistics about countries and languages.
 
 
 ## Highlights
