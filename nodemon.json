@@ -1,6 +1,5 @@
 {
-    "watch": ["index.ts", "routes/**/*.ts"],
-    "ext": "ts",
-    "exec": "ts-node index.ts"
-  }
-  
+  "watch": ["."],
+  "ext": "ts",
+  "exec": "ts-node ./index.ts"
+}

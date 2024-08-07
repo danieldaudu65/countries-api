@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000; // Define the port on which the server wi
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json()); 
 
-  
+   
 // Mount the countries router at the '/api/countries' path
 app.use('/api/countries', countriesRoute);
  
